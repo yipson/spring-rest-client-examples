@@ -1,4 +1,4 @@
-package guru.springframework.api.domine;
+package guru.springframework.api.domain;
 
 import java.util.List;
 

@@ -1,5 +1,5 @@
 
-package guru.springframework.api.domine;
+package guru.springframework.api.domain;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -7,13 +7,12 @@ import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
-public class Name implements Serializable {
+public class Job implements Serializable {
 
     private String title;
-    private String first;
-    private String last;
+    private String company;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 790935642773975936L;
+    private final static long serialVersionUID = -5987596761660626348L;
 
     public String getTitle() {
         return title;
@@ -23,20 +22,12 @@ public class Name implements Serializable {
         this.title = title;
     }
 
-    public String getFirst() {
-        return first;
+    public String getCompany() {
+        return company;
     }
 
-    public void setFirst(String first) {
-        this.first = first;
-    }
-
-    public String getLast() {
-        return last;
-    }
-
-    public void setLast(String last) {
-        this.last = last;
+    public void setCompany(String company) {
+        this.company = company;
     }
 
     public Map<String, Object> getAdditionalProperties() {
